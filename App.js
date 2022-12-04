@@ -1,22 +1,11 @@
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 import React from "react";
+import StartGameScreen from "./screens/StartGameScreen";
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <StartGameScreen />;
 };
 
 export default App;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
+const styles = StyleSheet.create({});
