@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 import React from "react";
 import StartGameScreen from "./screens/StartGameScreen";
+import LinearGradient from "react-native-linear-gradient";
 
 const App = () => {
   return (
-    <View style={styles.rootScreen}>
+    <LinearGradient colors={["#4e0329", "#ddb52f"]} style={styles.rootScreen}>
       <StartGameScreen />
-    </View>
+    </LinearGradient>
   );
 };
 
