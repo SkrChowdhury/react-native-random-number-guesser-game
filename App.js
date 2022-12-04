@@ -3,9 +3,18 @@ import React from "react";
 import StartGameScreen from "./screens/StartGameScreen";
 
 const App = () => {
-  return <StartGameScreen />;
+  return (
+    <View style={styles.rootScreen}>
+      <StartGameScreen />
+    </View>
+  );
 };
 
 export default App;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  rootScreen: {
+    backgroundColor: "#ddb52f",
+    flex: 1
+  }
+});
